@@ -5,8 +5,8 @@ class TokenService {
 module.exports = new TokenService();
 
 // interface Tokens {
-// 	userId: string
-// 	accessToken: string
-// 	refreshToken: string
-// 	exporesIn: number
+// userId: string
+// accessToken: string
+// refreshToken: string
+// exporesIn: number
 // }

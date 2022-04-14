@@ -1,8 +1,9 @@
 const { Schema, model } = require("mongoose");
+const City = require("./City");
 
 const schema = new Schema(
    {
-      String: [{ type: String }],
+      userCity: [{ type: Schema.Types.ObjectId, ref: City }],
    },
    { timestamps: true }
 );

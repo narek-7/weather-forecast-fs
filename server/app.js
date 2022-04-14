@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", routes);
+const API_KEY = "9196bd0d6ab62e92bd8c460a1c05cc10";
 
 const PORT = config.get("port") ?? 8080;
 
@@ -19,12 +20,10 @@ const PORT = config.get("port") ?? 8080;
 // } else {
 //    console.log("development");
 // }
-// username: Narek
-// password: wf-fs****
 
 async function start() {
    try {
-      //when we connect to the DB, we check only once, if the all neccesary datas are correct
+      //when there is connection to the DB, we check only once, if the all neccesary datas are correct
       mongoose.connection.once("open", () => {
          initDatabase();
       });

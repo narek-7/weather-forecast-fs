@@ -7,6 +7,7 @@ import FavoriteCities from "./components/favoriteCities";
 import NavBar from "./components/navBar";
 import { Route, Switch, Redirect } from "react-router-dom";
 import NotFound from "./components/notFound";
+import User from "./components/user";
 
 function App() {
    return (
