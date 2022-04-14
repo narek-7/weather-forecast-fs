@@ -1,0 +1,27 @@
+{
+  base: "stations",
+clouds: {all: 0},
+   cod: 200,
+coord: {lon: 2.3488, lat: 48.8534},
+   dt: 1649973087,
+   id: 2988507,
+main:
+      feels_like: 287.24 //-273.15 C
+      humidity: 73 // Humidity:74%
+      pressure: 1024 //hPa
+      temp: 287.81 
+      temp_max: 289.34
+      temp_min: 285.11
+   name: "Paris"
+sys: {type: 2, id: 2012208, country: 'FR', sunrise: 1649912511, sunset: 1649961573}
+timezone: 7200
+visibility: 10000 // 10 km
+weather: Array(1)
+   0: {id: 800, main: 'Clear', description: 'clear sky', icon: '01n'}
+   length: 1
+wind:
+   deg: 20
+   speed: 2.06 // m/s
+}
+
+Apr 15, 12:10am - last update

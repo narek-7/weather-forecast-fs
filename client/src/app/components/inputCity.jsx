@@ -14,9 +14,9 @@ const InputCity = ({ handleSearch }) => {
                   onChange={handleSearch}
                />
             </div>
-            <button className="btn btn-primary" type="submit">
+            {/* <button className="btn btn-primary" type="submit">
                Search
-            </button>
+            </button> */}
          </form>
       </div>
    );
