@@ -4,6 +4,14 @@ body {
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+
+   background-image: url("../assets/sky-8.png");
+   background-color: #cccccc;
+   height: 500px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
 }
 
 code {
@@ -13,6 +21,9 @@ code {
 .nav {
    border: 1px solid rgb(213, 213, 213);
    border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.8);
+   margin-top: 0rem;
+   font-size: 25px;
 }
 
 .invalidForm {
@@ -20,15 +31,27 @@ code {
    margin-bottom: 1.5rem;
 }
 
-.weatherForecast {
+.weather-forecast {
+   background-color: rgba(255, 255, 255, 0.7);
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
    box-shadow: 5px;
    margin-top: 4rem;
    border: 1px solid rgb(171, 170, 170);
    border-radius: 5px;
-   padding: 20px;
+   padding: 30px;
    text-align: top;
    width: auto;
-   max-width: 300px;
+   max-width: 350px;
    height: auto;
+}
+
+.problem-message {
+   text-align: center;
+   color: rgba(187, 0, 0, 0.85);
+   font-family:  "Arial, sans-serif", "Arial Narrow", "Franklin Gothic Medium";
+   font-size: 28px;
+}
+
+.main-temp{
+   font-size: 38px;
 }

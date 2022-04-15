@@ -11,8 +11,8 @@ import User from "./components/user";
 
 function App() {
    return (
-      <div className="container">
-         <NavBar />
+      <div className="container mt-0">
+         <NavBar className="nav" />
          <Switch>
             <Route path="/Login" component={Login} />
             <Route path="/Register" component={Register} />

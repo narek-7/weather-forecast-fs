@@ -4,7 +4,7 @@ import InputCity from "./inputCity";
 const CityWeatherForecast = ({ cityData }) => {
    let weatherIcon = "";
 
-   const kelvinToCelsiusCoverter = (kelvin) => {
+   const kelvinToCelsiusConverter = (kelvin) => {
       return Math.round(Number(kelvin) - 273.15) + "°C";
    };
 
@@ -17,18 +17,26 @@ const CityWeatherForecast = ({ cityData }) => {
 
    if (cityData) {
       return (
-         <div className="weatherForecast">
-            <img src={handleIcon()} alt="" />
-            <h2>
-               {cityData.name}, {cityData.sys.country}
-            </h2>
-            <h1>{kelvinToCelsiusCoverter(cityData.main.temp)}</h1>
-            <div>
-               Feel likes {kelvinToCelsiusCoverter(cityData.main.feels_like)}
-               {", "}
-               {cityData.weather[0].description}
+         <>
+            <div className="weather-forecast">
+               <h2>
+                  {cityData.name}, {cityData.sys.country}
+               </h2>
+               <img src={handleIcon()} alt="" />
+               <span className="main-temp">
+                  {kelvinToCelsiusConverter(cityData.main.temp)}
+               </span>
+               <h5>
+                  Feel likes {kelvinToCelsiusConverter(cityData.main.feels_like)}
+                  {", "}
+                  {cityData.weather[0].description}
+               </h5>
+               <div>humidity: {cityData.main.humidity}%</div>
+               <div>visibility: {Number(cityData.visibility) / 1000}km</div>
+               <div>pressure: {cityData.main.pressure}hPa</div>
+               <div>wind: {cityData.wind.speed}m/s</div>
             </div>
-         </div>
+         </>
       );
    }
 };

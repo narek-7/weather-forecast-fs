@@ -6,7 +6,6 @@ const Main = () => {
    const API_KEY = "9196bd0d6ab62e92bd8c460a1c05cc10";
    const url = "https://api.openweathermap.org/data/2.5/weather?q=London&appid={API key}";
 
-
    const [cityData, setCity] = useState("");
    const [message, setMessage] = useState("");
 
@@ -34,7 +33,7 @@ const Main = () => {
    return (
       <div>
          <InputCity handleSearch={handleSearch} />
-         <h2>{message}</h2>
+         <h2 className="problem-message">{message}</h2>
          <CityWeatherForecast cityData={cityData} />
       </div>
    );
